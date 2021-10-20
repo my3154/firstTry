@@ -113,5 +113,21 @@ bb67d09 HEAD@{1}: commit: My commit here
 3种方式操作版本
 1-基于索引值
     git reset --hard 前面的哈希索引值,就可以了.不管是向前向后都可以
-2-使用^符号
+2-使用^符号 只可以往后退
+    git reset --hard HEAD^  往后退一步
+    git reset --hard HEAD^^  往后退 2 步
 3-使用~符号
+    git reset --hard HEAD~5 往后退 5 步
+
+关于 git reset --hard/--mixed/--soft
+
+--soft
+    在本地库移动指针
+--mixed
+    在本地库移动指针,重置缓存区
+--hard 
+    在本地库移动指针,重置缓存区.重置工作区
+
+rm 文件名 删除文件
+
+git 可以通过版本号来找回本地被删除的文件 (回退版本号)
