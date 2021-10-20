@@ -1,6 +1,8 @@
 mkdir 01
 linux 命令，创建新文件夹📂，可在git下使用
 
+VIM
+
 ll 查看当前目录下所有非隐藏文件
 
 ls -la查看此目录下所有文件(包括隐藏的)
@@ -37,6 +39,10 @@ git commit 文件名 提交文件
 Vim编译器 :wq 退出
 
 $ git commit NOTE.txt
+hint: Waiting for your editor to close the file...       0 [sig] bash 1313! sigpacket::process: Suppressing signal 18 to win32 process (pid 33844)
+
+
+$ git commit NOTE.txt
 unknown option: -f
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
@@ -45,3 +51,19 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
  1 file changed, 35 insertions(+)
  create mode 100644 NOTE.txt
 
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+$ vim NOTE.txt  使用Vim打开文件
+
+修改文件以后  modified->修改
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   NOTE.txt 
+
+no changes added to commit (use "git add" and/or "git commit -a")
