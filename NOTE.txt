@@ -160,10 +160,14 @@ index b1e3679..786390a 100644
 +    git diff 文件名
 \ No newline at end of file
 
-其中红色为被删除OR开始改动的前一行
+其中红色为被删除OR开始改动的那一行
 +为添加-为删除
 
 如果没有其他参数则证明没有修改
 
 
-git diff HEAD 文件名 和指针指向的历史记录进行比较
+git diff HEAD 文件名 和指针指向的历史版本进行比较
+
+版本分支:
+    分支的操作:
+git status
