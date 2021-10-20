@@ -171,3 +171,15 @@ git diff HEAD 文件名 和指针指向的历史版本进行比较
 版本分支:
     分支的操作:
 git status
+$ git status
+On branch master ---在分支 master上
+nothing to commit, working tree clean
+
+git branch -v 查看/检查目前处于的分支状态 (绿色为所在分支)
+
+git branch b1 创建 b1 分支
+
+git checkout 分支名字
+$ git checkout b1
+Switched to branch 'b1'
+M       NOTE.txt
