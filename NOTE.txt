@@ -131,3 +131,39 @@ bb67d09 HEAD@{1}: commit: My commit here
 rm 文件名 删除文件
 
 git 可以通过版本号来找回本地被删除的文件 (回退版本号)
+
+找回删除文件的前提->文件在存在时候已经提交到了本地库!!!
+
+
+git的比较文件
+    git diff 文件名
+
+
+
+$ git diff NOTE.txt
+diff --git a/NOTE.txt b/NOTE.txt
+index b1e3679..786390a 100644
+--- a/NOTE.txt
++++ b/NOTE.txt
+@@ -130,4 +130,10 @@ bb67d09 HEAD@{1}: commit: My commit here
+
+ rm 文件名 删除文件
+
+-git 可以通过版本号来找回本地被删除的文件 (回退版本号)
+\ No newline at end of file
++git 可以通过版本号来找回本地被删除的文件 (回退版本号)
++
++找回删除文件的前提->文件在存在时候已经提交到了本地库!!!
++
++
++git的比较文件
++    git diff 文件名
+\ No newline at end of file
+
+其中红色为被删除OR开始改动的前一行
++为添加-为删除
+
+如果没有其他参数则证明没有修改
+
+
+git diff HEAD 文件名 和指针指向的历史记录进行比较
