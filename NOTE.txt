@@ -183,3 +183,10 @@ git checkout 分支名字
 $ git checkout b1
 Switched to branch 'b1'
 M       NOTE.txt
+
+提交更改后,会发现以下
+$ git branch -v
+* b1     8e5c8e3 from b1?
+  master 07196a4 111
+说明有一个的版本已经变化了(这里是b1)
+确保在合并以前提交到本地库
