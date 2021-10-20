@@ -33,3 +33,15 @@ Changes to be committed:
 git rm --cached 文件名 从缓冲区中移除文件
 
 git commit 文件名 提交文件
+
+Vim编译器 :wq 退出
+
+$ git commit NOTE.txt
+unknown option: -f
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+[master (root-commit) 7bf716a] My first try on GIT
+ 1 file changed, 35 insertions(+)
+ create mode 100644 NOTE.txt
+
