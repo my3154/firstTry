@@ -203,3 +203,19 @@ git 处理冲突 :
 同时修改文件
 git add 文件名
 git commit -m "日志信息" 此时commit不能带文件名
+
+创建分支的本质是创建新指针,切换分支的本质是切换指针
+
+git remote -v 查看存本地的长字符串...一般用来存 git仓库地址值
+git remote add origin https://github.com/my3154/firstTry.git 
+添加地址到 remote 的 origin 变量上去! 之后用 git remote -v 可以看到
+$ git remote -v
+origin  https://github.com/my3154/firstTry.git (fetch)
+origin  https://github.com/my3154/firstTry.git (push)
+
+fetch用于取回,push用于推送
+
+git push origin(remote上面的变量名) master
+
+$ git clone https://github.com/my3154/firstTry.git (远程仓库地址)
+克隆仓库
